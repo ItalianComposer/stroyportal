@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="styles/main.css">
+  <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
   <title>Stroy portal</title>
 </head>
 <body>
@@ -17,7 +18,7 @@
       <div class="header-top-menu__menu">
         <a class="menu__menu-link" href="#">Тендеры</a>
         <a class="menu__menu-link" href="#">База подрядчиков</a>
-        <a class="menu__menu-link" href="#">Другие сервисы</a>
+        <a class="menu__menu-link other-services" href="#">Другие сервисы</a>
       </div>
     </div>
     <div class="header-bottom-menu">
@@ -41,11 +42,153 @@
       </div>
     </div>
   </header>
-  <div class="">
+  <div class="content">
+    <div class="content-navigation">
+      <div class="navigation_catalog navigation_link-container">
+        <div class="navigation-description">
+          <a class="navigation_link" href="#">Каталог</a>
+          <p class="navigation_offers">4 442 512</p>
+        </div>
+      </div>
+      <div class="navigation_materials navigation_link-container">
+        <div class="navigation-description">
+          <a class="navigation_link" href="#">Строительные материалы</a>
+          <p class="navigation_offers">4 442 512 предложения</p>
+        </div>
+      </div>
+      <div class="navigation_dry-mixes navigation_link-container">
+        <div class="navigation-description">
+          <a class="navigation_link" href="#">Сухие строительные смеси</a>
+          <p class="navigation_offers">4 442 512 предложения</p>
+        </div>
+      </div>
+      <div class="navigation_fillers navigation_link-container">
+        <div class="navigation-description">
+          <a class="navigation_link" href="#">Шпатлевки</a>
+          <p class="navigation_offers">4 442 512 предложения</p>
+        </div>
+      </div>
+      <div class="navigation_knauf navigation_link-container">
+        <div class="navigation-description">
+          <a class="navigation_link" href="#">Шпатлевка Knauf</a>
+        </div>
+      </div>
+    </div>
+    <div class="content-title">
+      <h1 class="content-title_title">Штукатурка цементная цокольная Knauf Sockelpultz 25 кг</h1>
+      <img class="share-icon" src="images/share-2.svg" alt="">
+    </div>
+    <div class="slider">
+      <div id="sl-prev" class="sl-btn">❮</div>
+      <div class="slider-win">
+        <div class="slider-item"><a class="content-tags_link slider-item" href="#">Где купить</a></div>
+        <div class="slider-item"><a class="content-tags_link slider-item" href="#">Описание</a></div>
+        <div class="slider-item"><a class="content-tags_link slider-item" href="#">Характеристики</a></div>
+        <div class="slider-item"><a class="content-tags_link slider-item" href="#">Динамика цен</a></div>
+        <div class="slider-item"><a class="content-tags_link slider-item" href="#">Календарь низких цен</a></div>
+        <div class="slider-item"><a class="content-tags_link slider-item" href="#">Сравнение</a></div>
+      </div>
+      <div class="slider-control">
 
+      </div>
+      <div id="sl-next" class="sl-btn">❯</div>
+    </div>
+    <div class="content-product">
+      <div class="product-slider">
+        <div class="content-product-tags">
+          <div class="content-product-tags_left">
+            <div class="content-product-tags_hit">Хит продаж</div>
+            <div class="content-product-tags_action">Акция</div>
+          </div>
+          <div class="content-product-tags_right">
+            <button class="content-product-tags_in-list" type="button" name="button">В список</button>
+          </div>
+        </div>
+        <div class="product-slider_slider">
+          <button id="productPrev" class="product-slider_buttons" type="button" name="button">❮</button>
+          <input type="radio" name="slide_switch" id="id1"/>
+          <label class="slider_img-container" for="id1">
+          	<img class="slider_img" src="images/slide.png"/>
+          </label>
+          <img src="images/slide.png"/>
+        	<input type="radio" name="slide_switch" id="id2" checked="checked"/>
+        	<label class="slider_img-container" for="id2">
+        		<img class="slider_img" src="images/slide.png"/>
+          </label>
+          <img src="images/slide.png"/>
+        	<input type="radio" name="slide_switch" id="id3"/>
+        	<label class="slider_img-container active-slide" for="id3">
+          	<img class="slider_img" src="images/slide.png"/>
+        	</label>
+        	<img src="images/slide.png"/>
+          <button id="productNext" class="product-slider_buttons" type="button" name="button">❯</button>
+        </div>
+        <div class="content-product-ps">Наведите на изображение, чтобы увеличить его</div>
+      </div>
+      <div class="product-description">
+        <div class="about-product">
+          <img class="product-img" src="images/file-text.svg" alt="">
+          <div class="about-product_description">
+            <p class="about-product_title">Коротко о товаре</p>
+            <div class="about-product_weight">
+              <p class="about-product_text">Вес · </p>
+              <p class="about-product_text about-product_side-text">25—50 кг</p>
+            </div>
+            <div class="about-product_base">
+              <p class="about-product_text">Основа · </p>
+              <p class="about-product_text about-product_side-text">Гипсовая супер штукатурка Knauf S...</p>
+            </div>
+            <a class="about-product_link" href="#">Все  характеристики</a>
+          </div>
+        </div>
+        <div class="demand-product">
+          <img class="product-img" src="images/like.svg" alt="">
+          <div class="demand-product_description">
+            <p class="demand-product_title">Пользуется спросом</p>
+            <div class="demand-product_views">
+              <p class="demand-product_text demand-product_text_dashed">2 274 просмотров</p>
+              <p class="demand-product_text">602 заказа</p>
+            </div>
+          </div>
+        </div>
+        <div class="availability-product">
+          <img class="product-img" src="images/bird.svg" alt="">
+          <div class="availability-product_description">
+            <p class="availability-product_title">В наличии в Москве на 4 марта 2020</p>
+            <a class="availability-product_link" href="#">140 предложений</a>
+          </div>
+        </div>
+        <img class="product-description_img" src="images/knauf.png" alt="">
+      </div>
+      <div class="product-buy">
+        <div class="product-buy_popular">
+          <img class="popular-img" src="images/star.svg" alt="">
+          <p class="popular-text">Популярное предложение</p>
+        </div>
+        <div class="product-buy_price">
+          <p class="price">39 900 </p>
+          <p class="price-attitude">РУБ/ ШТ</p>
+        </div>
+        <div class="product-buy_availability">
+          В наличии
+        </div>
+        <button class="product-buy_button" type="button" name="button">Перейти в магазин</button>
+        <div class="product-buy_verified">
+          <img class="verified_img" src="images/shield.svg" alt="">
+          <div class="verified-description">
+            <p class="verified-description_title">Проверенный поставщик</p>
+            <p class="verified-description_name">ООО ВсеИнструменты.ру</p>
+            <button class="verified-description_button" type="button" name="button">Дилер</button>
+          </div>
+          <img class="verified_img" src="images/allInstr.png" alt="">
+        </div>
+      </div>
+    </div>
   </div>
   <footer class="footer">
 
   </footer>
+  <script type="text/javascript" src="scripts/main.js"></script>
+
 </body>
 </html>
